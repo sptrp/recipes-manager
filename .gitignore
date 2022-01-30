@@ -19,7 +19,8 @@ hs_err_pid*
 
 
 ### Gradle ###
-.gradle
+.gradle/
+gradle
 /build/
 
 # Ignore Gradle GUI config
@@ -30,3 +31,7 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
+.idea/
+
+.DS_Store
