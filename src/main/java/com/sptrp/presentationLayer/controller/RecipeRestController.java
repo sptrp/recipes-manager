@@ -1,15 +1,15 @@
-package recipes.main.presentationLayer.controller;
+package com.sptrp.presentationLayer.controller;
 
+import com.sptrp.businessLayer.model.Recipe;
+import com.sptrp.businessLayer.model.User;
+import com.sptrp.businessLayer.service.RecipeService;
+import com.sptrp.businessLayer.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import recipes.main.businessLayer.model.Recipe;
-import recipes.main.businessLayer.model.User;
-import recipes.main.businessLayer.service.RecipeService;
-import recipes.main.businessLayer.service.UserService;
 
 import javax.transaction.Transactional;
 import javax.validation.Valid;

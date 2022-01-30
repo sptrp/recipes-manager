@@ -1,11 +1,11 @@
-package recipes.main.businessLayer.service;
+package com.sptrp.businessLayer.service;
 
+import com.sptrp.businessLayer.model.Recipe;
+import com.sptrp.persistenceLayer.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-import recipes.main.businessLayer.model.Recipe;
-import recipes.main.persistenceLayer.RecipeRepository;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

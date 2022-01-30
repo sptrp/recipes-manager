@@ -1,4 +1,4 @@
-package recipes.main.businessLayer.model;
+package com.sptrp.businessLayer.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -116,12 +116,12 @@ public class Recipe {
 
 	@Override
  	public String toString(){
-		return 
-			"Recipe2{" + 
-			"directions = '" + directions + '\'' + 
-			",name = '" + name + '\'' + 
-			",description = '" + description + '\'' + 
-			",ingredients = '" + ingredients + '\'' + 
+		return
+			"Recipe2{" +
+			"directions = '" + directions + '\'' +
+			",name = '" + name + '\'' +
+			",description = '" + description + '\'' +
+			",ingredients = '" + ingredients + '\'' +
 			"}";
 		}
 

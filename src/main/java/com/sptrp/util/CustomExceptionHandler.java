@@ -1,4 +1,4 @@
-package recipes.main.util;
+package com.sptrp.util;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,8 +1,8 @@
-package recipes.main.persistenceLayer;
+package com.sptrp.persistenceLayer;
 
+import com.sptrp.businessLayer.model.Recipe;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import recipes.main.businessLayer.model.Recipe;
 
 import java.util.List;
 

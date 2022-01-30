@@ -1,14 +1,15 @@
-package recipes.main.presentationLayer.controller;
+package com.sptrp.presentationLayer.controller;
 
+import com.sptrp.businessLayer.model.User;
+import com.sptrp.businessLayer.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import recipes.main.businessLayer.model.User;
-import recipes.main.businessLayer.service.UserService;
 
 import javax.validation.Valid;
+
 
 @RestController
 public class RegistrationRestController {

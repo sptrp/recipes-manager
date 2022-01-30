@@ -1,4 +1,4 @@
-package recipes.main.businessLayer.model;
+package com.sptrp.businessLayer.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

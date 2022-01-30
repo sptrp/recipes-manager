@@ -1,12 +1,12 @@
-package recipes.main.businessLayer.service;
+package com.sptrp.businessLayer.service;
 
+import com.sptrp.businessLayer.model.User;
+import com.sptrp.persistenceLayer.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-import recipes.main.businessLayer.model.User;
-import recipes.main.persistenceLayer.UserRepository;
 
 import java.util.Optional;
 

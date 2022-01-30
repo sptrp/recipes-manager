@@ -1,13 +1,13 @@
-package recipes.main.businessLayer.service;
+package com.sptrp.businessLayer.service;
 
+import com.sptrp.businessLayer.model.User;
+import com.sptrp.persistenceLayer.UserRepository;
+import com.sptrp.util.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import recipes.main.businessLayer.model.User;
-import recipes.main.persistenceLayer.UserRepository;
-import recipes.main.util.UserDetailsImpl;
 
 import java.util.Optional;
 
@@ -22,7 +22,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional<User> user = userRepository.findUserByEmail(email);
 
-        if (user.isEmpty()) {
+        if (!user.isPresent()) {
             throw new UsernameNotFoundException("Not found: " + email);
         }
 

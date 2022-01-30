@@ -1,4 +1,4 @@
-package recipes.main.util;
+package com.sptrp.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
